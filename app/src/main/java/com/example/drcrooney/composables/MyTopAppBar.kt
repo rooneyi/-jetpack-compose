@@ -11,18 +11,24 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 
 @Composable
 fun MyTopAppBar(){
     BottomAppBar {
         Box(modifier = Modifier.fillMaxSize()) {
-            Text(text = "Drc Mind")
-            Icon(imageVector = Icons.Default.Info,
-                contentDescription ="Info",
+            Text(text = "Drc Mind",
+                fontFamily = FontFamily.Serif,
+                fontWeight = FontWeight.Bold,
                 modifier = Modifier
                     .align(Alignment.CenterStart)
                     .padding(8.dp))
+            Icon(imageVector = Icons.Default.Info,
+                contentDescription ="Info",
+                modifier = Modifier
+                    .align(Alignment.CenterEnd))
         }
     }
 }
