@@ -45,19 +45,22 @@ fun MyBottomAppBar(){
 
 @Composable
 fun bottomBarItem(icon :ImageVector,titre : String ){
-            Row() {
+            Row {
                 Column(modifier = Modifier.width(60.dp)) {
-                    Icon(imageVector = icon,
-                        contentDescription =null,
+                    Icon(
+                        imageVector = icon,
+                        contentDescription = null,
                         modifier = Modifier
                             .padding(4.dp)
-                            .align(Alignment.CenterHorizontally))
-                    Text(text = titre, modifier = Modifier
-                        .padding(4.dp)
-                        .align(Alignment.CenterHorizontally),
+                            .align(Alignment.CenterHorizontally)
+                    )
+                    Text(
+                        text = titre, modifier = Modifier
+                            .padding(4.dp)
+                            .align(Alignment.CenterHorizontally),
                         overflow = TextOverflow.Ellipsis
 
-                    
+
                     )
                 }
             }

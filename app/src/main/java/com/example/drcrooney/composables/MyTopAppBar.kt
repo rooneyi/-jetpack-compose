@@ -19,16 +19,20 @@ import androidx.compose.ui.unit.dp
 fun MyTopAppBar(){
     BottomAppBar {
         Box(modifier = Modifier.fillMaxSize()) {
-            Text(text = "Drc Mind",
+            Text(
+                text = "Interface Application",
                 fontFamily = FontFamily.Serif,
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier
                     .align(Alignment.CenterStart)
-                    .padding(8.dp))
-            Icon(imageVector = Icons.Default.Info,
-                contentDescription ="Info",
+                    .padding(8.dp)
+            )
+            Icon(
+                imageVector = Icons.Default.Info,
+                contentDescription = "Info",
                 modifier = Modifier
-                    .align(Alignment.CenterEnd))
+                    .align(Alignment.CenterEnd)
+            )
         }
     }
 }
