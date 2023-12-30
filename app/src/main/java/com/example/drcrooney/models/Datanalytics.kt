@@ -1,6 +1,6 @@
 package com.example.drcrooney.models
 
-data class Datanalytics(
+data class DataAnalytics(
     val title: String,
     val value: String
 )

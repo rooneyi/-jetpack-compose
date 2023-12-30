@@ -26,9 +26,9 @@ fun screen(){
         Column(modifier = Modifier.padding(it)) {
             ImageProfile()
             Analytics()
-            Card()
-            Message()
             Contenue()
+
+
         }
     }
 
