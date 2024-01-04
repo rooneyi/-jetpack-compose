@@ -7,6 +7,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material3.BottomAppBar
 import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -17,7 +18,7 @@ import androidx.compose.ui.unit.dp
 
 @Composable
 fun MyTopAppBar(){
-    BottomAppBar {
+    BottomAppBar(containerColor = MaterialTheme.colorScheme.primary) {
         Box(modifier = Modifier.fillMaxSize()) {
             Text(
                 text = "Interface Application",
